@@ -22,26 +22,8 @@ function App() {
     localStorage.setItem("path", "/");
   }, []);
 
-  // const handleLogin = (e) => {
-  //   e.preventDefault();
-  //   //sessionStorage.setItem("user","true");
-  //   //setUser(sessionStorage.getItem("user"));
-  //   console.log("Successfully Login" + localStorage.getItem("path"));
-  //   // <Redirect to="/getproducts"></Redirect>\
-  //   setUser(true);
-  //   setPath(localStorage.getItem("path"));
-  //   // console.log(e);
-  //   // history.push("/getproducts");
-  //   // console.log(path);
-  //   // <Redirect
-  //   //   to={props.path}
-  //   // ></Redirect>
-  // };
-  const handleLogout = (e) => {
-    e.preventDefault();
-    //sessionStorage.setItem("user","false");
-    setUser(false);
-  };
+  
+  
 
   return (
     <Router>
@@ -88,23 +70,6 @@ function App() {
       </Switch>
     </Router>
   );
-  // ) : (
-  //    <Redirect to={path} user={user} handleLogout={handleLogout}></Redirect>
-  //   // {console.log("hello APp")}
-  //           //  {/* {window.location.reload(history.push(path))} */}
-
-  // //   {/* <ProtectedRoute
-  // //   //       exact
-  // //   //       path={path}
-  // //   //       user={user}
-  // //   //       handleLogout={handleLogout}
-  // //   //       component={GetSubscribers}
-  // //   //     ></ProtectedRoute> */}
-  // //   // (path==="/getproducts")?
-  // //     // <GetProducts user={user}
-  // //     // handleLogout={handleLogout}></GetProducts>:<GetSubscribers user={user}
-  // //     // handleLogout={handleLogout}></GetSubscribers>
-  // );
 }
 
 export default App;
